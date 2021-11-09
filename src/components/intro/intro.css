@@ -1,0 +1,42 @@
+.intro {
+  display: flex;
+  height: 100vh;
+  background-color: #839dd4;
+}
+
+.intro-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-left-wrapper {
+  padding: 50px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.intro-right {
+  flex: 1;
+}
+
+.intro-name {
+  font-size: 60px;
+}
+.intro-dec {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro-left-wrapper {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+}
